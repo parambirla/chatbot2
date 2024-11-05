@@ -24,8 +24,8 @@ def api():
 
     global conversation_history
 
-    #personality = openess to experience
-    message = request.json.get("message") + ' . (Respond to this assuming "Openness to Experience" personality trait without revealing "openness to experience" statement in response) '
+    #personality = Conscientiousness
+    message = request.json.get("message") + ' . (Respond to this assuming "Conscientiousness" personality trait without revealing "Conscientiousness" statement in response) '
 
     conversation_history.append({"role": "user", "content": message})
     # Send the message to OpenAI's API and receive the response
